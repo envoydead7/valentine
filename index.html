@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="heart-rain">
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+  <div>
+    <h1>Happy Valentine's Day ❤️</h1>
+    <p>My love, you mean the world to me. Every moment with you feels like magic.</p>
+    <button class="open-letter-btn">Open Your Love Letter</button>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>A Letter to My Love ❤️</h2>
+      <p>
+        My Dearest Fatema,<br><br>
+        From the moment that I met you, my life changed forever 🥹. You know what's crazy? Every time I sit down to write to you, my mind gets flooded with all these little moments we've shared. 
+        Like those days in Indore – god, I miss those cuddles so much. The way you'd just fit perfectly in my arms, how you'd look up at me with those eyes that make my heart do stupid little flips.
+        Even now, sitting here writing this, I can't help but smile thinking about it.<br><br>
+        Baby, you have no idea how much I miss your touch. Remember how we'd just lie there, not saying anything, just drawing little patterns on each other's hands? 
+        Those quiet moments with you were something else. I never thought I could be that peaceful with someone, just existing together. 
+        But with you, even silence feels like the most beautiful conversation.
+        <br><br>
+        You know what's funny? Before you, I never thought I'd be the type to write poems or get all mushy about love. 
+        But here I am, always thinking about the little things you do – the way you get super excited about the smallest things, how you make every boring day feel special just by being in it.
+        <br><br>
+        Those days in Indore keep playing in my head like my favorite movie. Your kisses, your warmth, the way everything else just disappeared when we were together. I miss it all so much it hurts sometimes. 
+        But knowing you're mine, that we have so many more moments like that ahead of us – that makes everything okay.
+        <br><br>
+        You're not just my girlfriend, Fatema. 
+        You're my best friend, my favorite person to talk to at 3 AM, the one person who makes me want to be better while loving me exactly as I am. 
+        Every day with you feels like a gift, even when we're just doing nothing together.
+        <br><br>
+        I love you, baby girl. Like, really really love you. 
+        Not just in the big romantic ways, but in all the tiny, everyday ways too. You're my favorite everything.
+        <br><br>
+
+        Forever yours,<br>
+        Mustafa
+
+        <br><br>
+      </p>
+      <div class="gallery">
+        <img src="/assets/images/img1.jpg" alt="Our Memory 1">
+        <img src="/assets/images/img2.jpg" alt="Our Memory 2">
+        <img src="/assets/images/img3.jpg" alt="Our Memory 3">
+        <img src="/assets/images/img4.jpg" alt="Our Memory 4">
+        <img src="/assets/images/img5.jpg" alt="Our Memory 5">
+        <img src="/assets/images/img6.jpg" alt="Our Memory 6">
+      </div>
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // JavaScript for Popup
+    const popup = document.getElementById('popup');
+
+    function openPopup() {
+      popup.style.display = 'block';
+    }
+
+    function closePopup() {
+      popup.style.display = 'none';
+    }
+
+    document.querySelector('.open-letter-btn').addEventListener('click', openPopup);
+  </script>
+</body>
+</html>
