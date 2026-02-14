@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dearest Fatema</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&family=Caveat:wght@400;700&family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="py-10">
+
+    <!-- Hero Section -->
+    <div class="max-w-5xl mx-auto scrapbook-page p-8 md:p-16 rounded-sm mb-12 overflow-hidden">
+        <div class="washi-tape -top-2 -left-4" style="background: var(--tape-blue);"></div>
+        <div class="washi-tape -top-2 -right-4" style="transform: rotate(20deg);"></div>
+        
+        <div class="text-center relative">
+            <div id="heart-container"></div>
+            <h2 class="text-rose-500 text-2xl font-handwritten mb-2">Our Scrapbook</h2>
+            <h1 class="text-6xl md:text-8xl text-rose-900 mb-6">Fatema & Mustafa</h1>
+            <p class="font-handwritten text-2xl text-gray-600 max-w-lg mx-auto leading-relaxed">
+                "A collection of moments that turned into a lifetime promise."
+            </p>
+            
+            <div class="mt-12 flex justify-center gap-8 flex-wrap">
+                <div class="polaroid" style="--rotation: -5deg;" data-caption="My Soulmate">
+                    <img style="width: 150px; height: auto;" src="/images/fatema.jpg" alt="Fatema">
+                </div>
+                <div class="polaroid" style="--rotation: 7deg;" data-caption="Us Forever">
+                    <img style="width: 150px; height: auto;" src="/images/Us.jpg" alt="Us">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline Section -->
+    <div class="max-w-5xl mx-auto scrapbook-page p-8 md:p-16 rounded-sm mb-12">
+        <div class="washi-tape top-10 -right-8" style="width: 150px; background: rgba(0,0,0,0.05);"></div>
+        
+        <h2 class="text-5xl text-gray-800 mb-12 border-b-2 border-dashed border-gray-300 pb-4">Timeline of Us</h2>
+        
+        <div class="space-y-24 relative">
+            <!-- 1: Started Talking -->
+            <div class="flex flex-col md:flex-row items-center gap-8 reveal">
+                <div class="polaroid" style="--rotation: -2deg;" data-caption="First Hello">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=300">
+                </div>
+                <div class="flex-1">
+                    <div class="sticky-note blue" style="--rotation: 1deg;">
+                        <h4 class="text-xl underline mb-2">29 July 2023</h4>
+                        <p class="text-lg leading-snug">Started Talking. The day my phone became my favorite thing, because it held your messages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2: Proposed -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 reveal">
+                <div class="polaroid" style="--rotation: 3deg;" data-caption="The Question">
+                    <img src="/images/question.jpg" alt="Proposal" style="width: 300px; height: auto;">
+                </div>
+                <div class="flex-1">
+                    <div class="sticky-note pink" style="--rotation: -2deg;">
+                        <h4 class="text-xl underline mb-2">15 August 2023</h4>
+                        <p class="text-lg leading-snug">Proposed. I couldn't wait another day to tell you that I wanted you by my side forever.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3: First Met -->
+            <div class="flex flex-col md:flex-row items-center gap-8 reveal">
+                <div class="polaroid" style="--rotation: -4deg;" data-caption="Finally!">
+                    <img src="/images/firstday.jpg" alt="First Meeting" style="width: 300px; height: auto;">
+                </div>
+                <div class="flex-1">
+                    <div class="sticky-note" style="--rotation: 2deg;">
+                        <h4 class="text-xl underline mb-2">20 July 2024</h4>
+                        <p class="text-lg leading-snug">First Met. Reality was finally better than my dreams. Seeing you for the first time was magic.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4: Nisbat -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 reveal">
+                <div class="polaroid" style="--rotation: 5deg;" data-caption="Blessed">
+                    <img src="/images/nisbat.jpg" alt="Nisbat" style="width: 300px; height: auto;">
+                </div>
+                <div class="flex-1">
+                    <div class="sticky-note blue" style="--rotation: -1deg;">
+                        <h4 class="text-xl underline mb-2">18 January 2025</h4>
+                        <p class="text-sm">19 Rajjab 1446</p>
+                        <p class="text-lg leading-snug">Nisbat. A beautiful promise made before our families and the Almighty.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5: Engaged -->
+            <div class="flex flex-col md:flex-row items-center gap-8 reveal">
+                <div class="polaroid" style="--rotation: -3deg;" data-caption="Almost Married!">
+                    <img src="/images/engagement.jpg" alt="Engagement" style="width: 300px; height: auto;">
+                </div>
+                <div class="flex-1">
+                    <div class="sticky-note pink" style="--rotation: 3deg;">
+                        <h4 class="text-xl underline mb-2">22 October 2025</h4>
+                        <p class="text-sm">1 Jumadil Ula</p>
+                        <p class="text-lg leading-snug">Engaged. The official countdown to the rest of our lives began here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Letter Section -->
+    <div class="max-w-3xl mx-auto scrapbook-page p-12 rounded-sm mb-12 text-center">
+        <div class="washi-tape -top-2 left-1/2 -translate-x-1/2" style="width: 200px; background: var(--tape-pink);"></div>
+        <h2 class="text-4xl font-romantic text-rose-700 mb-8 pt-6">A Note for Fatema</h2>
+        <div class="font-handwritten text-2xl text-gray-700 leading-relaxed space-y-4 text-left">
+            <p>Dearest Fatema,</p>
+            <p>Every piece of this scrapbook is a reminder of how blessed I am. From our first conversation to our engagement, every moment has been a stepping stone to the beautiful future we are building.</p>
+            <p>You are my heart, my peace, and my greatest adventure. Happy Valentine's Day, my love.</p>
+            <p class="text-right mt-8 font-romantic text-3xl text-rose-600">— Forever Yours, Mustafa</p>
+        </div>
+    </div>
+
+    <!-- Question Section -->
+    <div class="max-w-xl mx-auto text-center p-8 reveal">
+        <h3 class="font-handwritten text-4xl mb-8">Will you be my Valentine?</h3>
+        <div class="flex justify-center gap-4">
+            <button onclick="celebrate()" class="bg-rose-600 text-white px-10 py-3 rounded-full shadow-lg hover:bg-rose-700 transition transform hover:scale-110 font-bold">YES! ❤️</button>
+            <button id="no-btn" onmouseover="dodge()" class="border-2 border-rose-600 text-rose-600 px-10 py-3 rounded-full transition font-bold">No</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-12 text-gray-500 font-handwritten text-xl">
+        Mustafa ❤️ Fatema | 2026
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 z-[100] bg-black/60 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <div class="scrapbook-page p-10 rounded-sm text-center max-w-sm relative">
+            <div class="washi-tape -top-2 left-10"></div>
+            <div class="text-6xl mb-4">🏠</div>
+            <h2 class="text-4xl font-romantic text-rose-600 mb-4">I Love You!</h2>
+            <p class="font-handwritten text-xl text-gray-600 mb-6">You've made me the happiest person ever, Fatema.</p>
+            <button onclick="closeModal()" class="text-rose-500 underline font-bold">Back to Scrapbook</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>

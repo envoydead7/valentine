@@ -1,0 +1,102 @@
+:root {
+            --paper: #f9f7f1;
+            --tape-pink: rgba(244, 114, 182, 0.4);
+            --tape-blue: rgba(147, 197, 253, 0.4);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e5e5e5;
+            background-image: radial-gradient(#d1d1d1 1px, transparent 0);
+            background-size: 20px 20px;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .scrapbook-page {
+            background-color: var(--paper);
+            background-image: url('https://www.transparenttextures.com/patterns/felt.png');
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        h1, h2, .font-romantic { font-family: 'Dancing Script', cursive; }
+        .font-handwritten { font-family: 'Caveat', cursive; }
+        .font-marker { font-family: 'Gochi Hand', cursive; }
+
+        /* Washi Tape Effect */
+        .washi-tape {
+            position: absolute;
+            width: 100px;
+            height: 30px;
+            background: var(--tape-pink);
+            transform: rotate(-15deg);
+            z-index: 10;
+            backdrop-filter: blur(1px);
+            border-left: 2px dashed rgba(0,0,0,0.1);
+            border-right: 2px dashed rgba(0,0,0,0.1);
+        }
+
+        /* Polaroid Style */
+        .polaroid {
+            background: white;
+            padding: 12px 12px 40px 12px;
+            box-shadow: 3px 5px 15px rgba(0,0,0,0.15);
+            transform: rotate(var(--rotation, 0deg));
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+        }
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 50;
+        }
+        .polaroid img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+        .polaroid::after {
+            content: attr(data-caption);
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Caveat', cursive;
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        /* Sticky Notes */
+        .sticky-note {
+            background: #fff740;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+            transform: rotate(var(--rotation, 2deg));
+            font-family: 'Gochi Hand', cursive;
+            position: relative;
+            min-height: 150px;
+        }
+        .sticky-note.pink { background: #ff7eb9; color: white; }
+        .sticky-note.blue { background: #7afcff; }
+
+        /* Timeline custom */
+        .timeline-vertical {
+            border-left: 2px dashed #ccc;
+            margin-left: 20px;
+        }
+
+        .floating-heart {
+            position: absolute;
+            pointer-events: none;
+            animation: floatUp 4s ease-in infinite;
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) scale(0); opacity: 0; }
+            100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+        }
+
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
